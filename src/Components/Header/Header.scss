@@ -1,0 +1,100 @@
+@import "../../style/vars.scss" ;
+
+button{
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+
+}
+
+a{
+    text-decoration: none;
+}
+
+
+
+.header_top_part{
+    background: url("../../../public/headerBack.jpg") ;
+     background-position: center;
+   display: flex;
+   flex-direction: column;
+background-repeat: no-repeat;
+
+     width: 100%;
+   .logo_part{
+    display: flex;
+    margin: auto;
+    width: 130px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px 0;
+
+    
+
+p{
+@include fontStyle (22px, #FFFFFF, normal, normal);
+}
+
+img{
+    width: 27px;
+}
+
+   }
+
+   .offer{
+    display: flex;
+    width: 784px;
+    height: 326px;
+    align-items: center;
+    margin: 0 auto 63px auto;
+    .whiteOffer{
+        @include fontStyle (50px, #FFFFFF, 800, 60px);
+
+    }
+    .orangeOffer{
+        @include fontStyle (50px, #FF5C00, 800, 60px);
+        
+    }
+    .freeDelivery{
+        @include fontStyle (16px, #FFFFFF, normal, 21.82px);
+        padding: 52px 0 0 0;
+        
+    }
+   }
+    
+}
+
+.bottom_tabs_part{
+    margin: 40px 0 50px 0;
+    nav{
+        display: flex;
+        width: 1200px;
+        justify-content: space-between;
+        margin: auto;
+
+        a.active{
+            .menu_link{
+                background: #FFAB08;
+            }
+        }
+
+    .menu_link{
+        width: 121px;
+        height: 40px;
+        border-radius: 50px;
+        gap: 8px;
+        background: #ffffff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @include fontStyle (16px, black, normal, 21.82px);
+        transition: 0.3s;
+        &:hover{
+            scale: 1.08;
+        }
+        
+    }
+    }
+
+}

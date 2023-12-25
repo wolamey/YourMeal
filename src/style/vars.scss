@@ -1,0 +1,7 @@
+@mixin fontStyle ($size, $color, $weight, $lineH){
+    font-size: $size;
+    font-family: 'Nunito', sans-serif;
+    color: $color;
+    font-weight:$weight;
+    line-height:$lineH ;
+}
