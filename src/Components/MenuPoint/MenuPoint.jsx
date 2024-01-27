@@ -1,4 +1,4 @@
-import './ComponentBurgers.scss'
+import './MenuPoint.scss'
 
 export default function Burgers({ pic, positionName, weight, price, openPopup, item, addFromMenu, delCard, id, editTotalPrice }) {
   return (

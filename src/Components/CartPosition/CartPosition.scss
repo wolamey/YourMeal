@@ -24,7 +24,7 @@ button {
             width: 64px;
             height: 52px;
             border-radius: 8px;
-
+            object-fit: cover;
         }
 
         .info {
@@ -51,7 +51,7 @@ button {
                 display: flex;
                 align-items: center;
                 width: 70px;
-                justify-content: space-between;
+                justify-content: space-between; 
                 background: #F2F2F3;
                 padding: 5px;
                 border-radius: 8px;

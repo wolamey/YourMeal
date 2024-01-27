@@ -1,36 +1,22 @@
 import './Burgers.scss'
-import ComponentBurgers from '../../Components/ComponentBurgers/ComponentBurgers'
-import MenuPopup from '../../Components/MenuPopup/MenuPopup'
+import { v4 as uuidv4 } from 'uuid';
+import LayoutMenuPage from '../../Components/LayoutMenuPage/LayoutMenuPage'
 
-export default function Burgers({burgers, setBurgers, foodInfo, pic, positionName, weight, price, openPopup, item, addFromMenu , closePopup, delCard, id, editTotalPrice, popup, setPopup, editAllProdCount }) {
+
+export default function Burgers({cartList, setCartList, burgInfo, openPopup, addFromMenu , closePopup, popup, setPopup, editAllProdCount }) {
   return (
-    <div className='burger_page'>
+<LayoutMenuPage 
 
-<div className="burger_menu">
-{foodInfo.map((item) => (
-            <ComponentBurgers {...item}
-              openPopup={openPopup}
-              item={item}
-              addFromMenu={addFromMenu}
-              foodInfo = {foodInfo}
-              key={1 + item.id}
-            />
-          ))}</div>
+positionInfo={burgInfo}
+addFromMenu={addFromMenu}
+popup={popup}
+setPopup={setPopup}
+cartList={cartList}
+setCartList={setCartList}
+openPopup={openPopup}
+closePopup={closePopup}
+editAllProdCount={editAllProdCount}
 
-{popup.map(item => {
-        return <div  className='popBack'>
-          <MenuPopup {...item}
-            closePopup={closePopup}
-            burgers={burgers}
-            setBurgers={setBurgers}
-            editAllProdCount={editAllProdCount}
-            editTotalPrice={editTotalPrice}
-            item={item}
-            // addFromPopup = {addFromPopup}
-            addFromMenu={addFromMenu}
-          />
-        </div>
-      })}
-    </div>
-  )
+/>
+)
 }

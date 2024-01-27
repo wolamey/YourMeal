@@ -1,0 +1,894 @@
+{
+  "forCart": [
+    {
+      "id": 1,
+      "pic": "./burg4.png",
+      "positionName": "Meat Bomb",
+      "weight": 520,
+      "price": 689,
+      "constituents": [
+        "meat",
+        "bun",
+        "lettuce",
+        "tomato",
+        "cheese",
+        "sauce"
+      ],
+      "calories": 520,
+      "info": "A hearty and satisfying burger with a juicy meat patty, fresh lettuce and tomato, melted cheese, and special sauce, all sandwiched between a soft bun."
+    },
+    {
+      "id": 2,
+      "pic": "./burg5.png",
+      "positionName": "Super cheesy",
+      "weight": 520,
+      "price": 550,
+      "constituents": [
+        "beef patty",
+        "cheese",
+        "bun",
+        "ketchup",
+        "pickles",
+        "onion"
+      ],
+      "calories": 450,
+      "info": "A classic cheeseburger featuring a succulent beef patty, gooey melted cheese, tangy pickles, and onions, all nestled in a soft bun and drizzled with ketchup. A timeless favorite for cheeseburger lovers."
+    },
+    {
+      "id": 3,
+      "pic": "./burg6.png",
+      "positionName": "Satisfying",
+      "weight": 580,
+      "price": 639,
+      "constituents": [
+        "chicken",
+        "breadcrumbs",
+        "spices",
+        "dipping sauce"
+      ],
+      "calories": 350,
+      "info": "Delicious and crispy chicken tenders coated in seasoned breadcrumbs, served with a flavorful dipping sauce. A satisfying and tasty option for chicken lovers."
+    }
+  ],
+  "BurgerMenu": [
+    {
+      "id": 1,
+      "pic": "./burg4.png",
+      "positionName": "Meat Bomb",
+      "weight": 520,
+      "price": 689,
+      "constituents": [
+        "meat",
+        "bun",
+        "lettuce",
+        "tomato",
+        "cheese",
+        "sauce"
+      ],
+      "calories": 520,
+      "info": "A hearty and satisfying burger with a juicy meat patty, fresh lettuce and tomato, melted cheese, and special sauce, all sandwiched between a soft bun."
+    },
+    {
+      "id": 2,
+      "pic": "./burg5.png",
+      "positionName": "Super cheesy",
+      "weight": 520,
+      "price": 550,
+      "constituents": [
+        "beef patty",
+        "cheese",
+        "bun",
+        "ketchup",
+        "pickles",
+        "onion"
+      ],
+      "calories": 450,
+      "info": "A classic cheeseburger featuring a succulent beef patty, gooey melted cheese, tangy pickles, and onions, all nestled in a soft bun and drizzled with ketchup. A timeless favorite for cheeseburger lovers."
+    },
+    {
+      "id": 3,
+      "pic": "./burg6.png",
+      "positionName": "Satisfying",
+      "weight": 580,
+      "price": 639,
+      "constituents": [
+        "chicken",
+        "breadcrumbs",
+        "spices",
+        "dipping sauce"
+      ],
+      "calories": 350,
+      "info": "Delicious and crispy chicken tenders coated in seasoned breadcrumbs, served with a flavorful dipping sauce. A satisfying and tasty option for chicken lovers."
+    },
+    {
+      "id": 4,
+      "pic": "./burg1.png",
+      "positionName": "Heavy blow",
+      "weight": 420,
+      "price": 480,
+      "constituents": [
+        "beef",
+        "bacon",
+        "cheddar cheese",
+        "lettuce",
+        "tomato",
+        "onion",
+        "pickles",
+        "special sauce"
+      ],
+      "calories": 600,
+      "info": "Super meat delight! A large chopped cutlet of fresh beef meat will conquer you with its juiciness, and crispy lettuce leaves will add freshness. The addition of bacon, cheddar cheese, and special sauce makes it an irresistible treat."
+    },
+    {
+      "id": 5,
+      "pic": "./burg2.png",
+      "positionName": "Timeless classic",
+      "weight": 450,
+      "price": 450,
+      "constituents": [
+        "beef",
+        "lettuce",
+        "tomato",
+        "onion",
+        "pickles",
+        "ketchup"
+      ],
+      "calories": 550,
+      "info": "The timeless classic burger features a juicy beef patty with fresh lettuce, tomato, onion, pickles, and a touch of ketchup. A simple yet satisfying choice for burger lovers."
+    },
+    {
+      "id": 6,
+      "pic": "./burg3.png",
+      "positionName": "Italian",
+      "weight": 510,
+      "price": 560,
+      "constituents": [
+        "beef",
+        "mozzarella cheese",
+        "arugula",
+        "tomato",
+        "basil pesto"
+      ],
+      "calories": 520,
+      "info": "Experience the flavors of Italy with this delicious burger. Made with premium beef, melted mozzarella cheese, fresh arugula, sliced tomato, and a drizzle of basil pesto. A gourmet delight for your taste buds."
+    }
+  ],
+  "SnacksMenu": [
+    {
+      "id": 1,
+      "pic": "./snack1.jpg",
+      "positionName": "Crispy Chicken Wings",
+      "weight": 300,
+      "price": 350,
+      "constituents": [
+        "chicken",
+        "flour",
+        "spices",
+        "dipping sauce"
+      ],
+      "calories": 450,
+      "info": "Delicious and crispy chicken wings served with your choice of dipping sauce. A classic snack option for chicken lovers."
+    },
+    {
+      "id": 2,
+      "pic": "./snack2.jpg",
+      "positionName": "Loaded Nachos",
+      "weight": 400,
+      "price": 480,
+      "constituents": [
+        "tortilla chips",
+        "cheese",
+        "ground beef",
+        "salsa",
+        "jalapenos",
+        "sour cream"
+      ],
+      "calories": 600,
+      "info": "A generous portion of crispy tortilla chips loaded with melted cheese, savory ground beef, fresh salsa, jalapenos, and a dollop of sour cream. Perfect for sharing or enjoying as a solo treat."
+    },
+    {
+      "id": 3,
+      "pic": "./snack3.webp",
+      "positionName": "Mozzarella Sticks",
+      "weight": 250,
+      "price": 320,
+      "constituents": [
+        "mozzarella cheese",
+        "breadcrumbs",
+        "spices",
+        "marinara sauce"
+      ],
+      "calories": 380,
+      "info": "Golden and crispy on the outside, gooey and cheesy on the inside. These mozzarella sticks are served with a zesty marinara sauce for dipping. A delightful snack for cheese lovers."
+    },
+    {
+      "id": 4,
+      "pic": "./snack4.jpg",
+      "positionName": "Garlic Parmesan Fries",
+      "weight": 350,
+      "price": 280,
+      "constituents": [
+        "potatoes",
+        "garlic",
+        "parmesan cheese",
+        "herbs"
+      ],
+      "calories": 420,
+      "info": "Crispy golden fries tossed in a flavorful blend of garlic, parmesan cheese, and herbs. A tasty and aromatic snack to satisfy your cravings."
+    },
+    {
+      "id": 5,
+      "pic": "./snack5.jpg",
+      "positionName": "Buffalo Chicken Dip",
+      "weight": 280,
+      "price": 380,
+      "constituents": [
+        "chicken",
+        "cream cheese",
+        "hot sauce",
+        "tortilla chips",
+        "celery sticks"
+      ],
+      "calories": 360,
+      "info": "Creamy and spicy buffalo chicken dip served with crispy tortilla chips or crunchy celery sticks. A perfect appetizer for game day or any casual gathering."
+    },
+    {
+      "id": 6,
+      "pic": "./snack6.jpg",
+      "positionName": "Spinach Artichoke Dip",
+      "weight": 300,
+      "price": 400,
+      "constituents": [
+        "spinach",
+        "artichokes",
+        "cheese",
+        "pita chips",
+        "breadsticks"
+      ],
+      "calories": 320,
+      "info": "A creamy blend of spinach, artichokes, and melted cheese, served with crispy pita chips or breadsticks. A delightful and flavorful dip for sharing with friends or enjoying as a solo snack."
+    }
+  ],
+  "HotDogsMenu": [
+    {
+      "id": 1,
+      "pic": "./hotdog1.jpg",
+      "positionName": "Classic Hot Dog",
+      "weight": 200,
+      "price": 250,
+      "constituents": [
+        "sausage",
+        "hot dog bun",
+        "ketchup",
+        "mustard",
+        "relish",
+        "onions"
+      ],
+      "calories": 280,
+      "info": "An all-time favorite, this classic hot dog features a juicy sausage nestled in a soft bun and topped with ketchup, mustard, relish, and onions. A simple yet satisfying choice for hot dog enthusiasts."
+    },
+    {
+      "id": 2,
+      "pic": "./hotdog2.png",
+      "positionName": "Chili Cheese Dog",
+      "weight": 250,
+      "price": 320,
+      "constituents": [
+        "sausage",
+        "hot dog bun",
+        "chili",
+        "cheese sauce",
+        "jalapenos"
+      ],
+      "calories": 350,
+      "info": "Indulge in the hearty flavors of this chili cheese dog, featuring a savory sausage topped with rich chili, creamy cheese sauce, and zesty jalapenos. A delicious and satisfying choice for those craving a bit of spice."
+    },
+    {
+      "id": 3,
+      "pic": "./hotdog3.jpg",
+      "positionName": "BBQ Bacon Dog",
+      "weight": 280,
+      "price": 380,
+      "constituents": [
+        "sausage",
+        "hot dog bun",
+        "bacon",
+        "BBQ sauce",
+        "onion rings"
+      ],
+      "calories": 400,
+      "info": "Savor the smoky and sweet flavors of this BBQ bacon dog, featuring a juicy sausage topped with crispy bacon, tangy BBQ sauce, and crunchy onion rings. A mouthwatering option for barbecue lovers."
+    },
+    {
+      "id": 4,
+      "pic": "./hotdog4.jpg",
+      "positionName": "Chicago Style Dog",
+      "weight": 270,
+      "price": 350,
+      "constituents": [
+        "sausage",
+        "poppy seed bun",
+        "tomato slices",
+        "pickle spear",
+        "sport peppers",
+        "celery salt"
+      ],
+      "calories": 320,
+      "info": "Experience the unique blend of flavors in the iconic Chicago style hot dog, featuring a sausage nestled in a poppy seed bun and topped with fresh tomato slices, a pickle spear, sport peppers, and a sprinkle of celery salt. A must-try for hot dog aficionados."
+    },
+    {
+      "id": 5,
+      "pic": "./hotdog5.jpg",
+      "positionName": "Gourmet Veggie Dog",
+      "weight": 220,
+      "price": 300,
+      "constituents": [
+        "veggie sausage",
+        "whole wheat bun",
+        "grilled vegetables",
+        "hummus"
+      ],
+      "calories": 250,
+      "info": "A delightful gourmet option for vegetarians, this veggie dog features a flavorful veggie sausage nestled in a whole wheat bun and topped with grilled vegetables and a dollop of creamy hummus. A delicious and healthy choice for veggie enthusiasts."
+    },
+    {
+      "id": 6,
+      "pic": "./hotdog6.jpg",
+      "positionName": "BBQ Bacon Dog",
+      "weight": 280,
+      "price": 380,
+      "constituents": [
+        "sausage",
+        "hot dog bun",
+        "bacon",
+        "BBQ sauce",
+        "onion rings"
+      ],
+      "calories": 400,
+      "info": "Savor the smoky and sweet flavors of this BBQ bacon dog, featuring a juicy sausage topped with crispy bacon, tangy BBQ sauce, and crunchy onion rings. A mouthwatering option for barbecue lovers."
+    }
+  ],
+  "ComboMenu": [
+    {
+      "id": 1,
+      "pic": "./combo1.jpg",
+      "positionName": "Classic Combo",
+      "weight": 400,
+      "price": 450,
+      "constituents": [
+        "classic hot dog",
+        "fries",
+        "soda"
+      ],
+      "calories": 700,
+      "info": "Enjoy the classic combo with a juicy hot dog, crispy fries, and a refreshing soda. A perfect meal for those craving traditional fast food flavors."
+    },
+    {
+      "id": 2,
+      "pic": "./combo2.jpg",
+      "positionName": "Cheese Lover's Combo",
+      "weight": 450,
+      "price": 500,
+      "constituents": [
+        "cheese hot dog",
+        "cheese fries",
+        "milkshake"
+      ],
+      "calories": 800,
+      "info": "Indulge in the Cheese Lover's Combo featuring a cheesy hot dog, delicious cheese fries, and a creamy milkshake. A delightful treat for cheese enthusiasts."
+    },
+    {
+      "id": 3,
+      "pic": "./combo3.jpg",
+      "positionName": "Spicy Combo",
+      "weight": 420,
+      "price": 480,
+      "constituents": [
+        "spicy hot dog",
+        "jalapeno poppers",
+        "iced tea"
+      ],
+      "calories": 750,
+      "info": "Satisfy your spicy cravings with the Spicy Combo, including a zesty hot dog, spicy jalapeno poppers, and a refreshing iced tea. A bold and flavorful choice."
+    },
+    {
+      "id": 4,
+      "pic": "./combo4.jpg",
+      "positionName": "Gourmet Combo",
+      "weight": 500,
+      "price": 550,
+      "constituents": [
+        "gourmet hot dog",
+        "truffle fries",
+        "craft beer"
+      ],
+      "calories": 850,
+      "info": "Elevate your fast food experience with the Gourmet Combo, featuring a gourmet hot dog, truffle-infused fries, and a premium craft beer. A sophisticated and delicious option."
+    },
+    {
+      "id": 5,
+      "pic": "./combo5.jpg",
+      "positionName": "Veggie Combo",
+      "weight": 380,
+      "price": 420,
+      "constituents": [
+        "vegetarian hot dog",
+        "sweet potato fries",
+        "fresh juice"
+      ],
+      "calories": 650,
+      "info": "For vegetarians and veggie enthusiasts, the Veggie Combo offers a tasty vegetarian hot dog, sweet potato fries, and a nutritious fresh juice. A satisfying and wholesome choice."
+    },
+    {
+      "id": 6,
+      "pic": "./combo6.jpg",
+      "positionName": "Kids' Combo",
+      "weight": 350,
+      "price": 400,
+      "constituents": [
+        "mini hot dogs",
+        "smiley fries",
+        "fruit punch"
+      ],
+      "calories": 600,
+      "info": "Perfect for kids, the Kids' Combo features mini hot dogs, fun smiley fries, and a fruity fruit punch. A delightful and child-friendly meal option."
+    }
+  ],
+  "shawarmaMenu": [
+    {
+      "id": 1,
+      "pic": "./shawarma1.jpg",
+      "positionName": "Classic Shawarma",
+      "weight": 300,
+      "price": 350,
+      "constituents": [
+        "chicken",
+        "pita bread",
+        "garlic sauce",
+        "pickles",
+        "tomatoes",
+        "lettuce"
+      ],
+      "calories": 450,
+      "info": "A traditional Middle Eastern dish, the classic shawarma features tender chicken wrapped in warm pita bread and topped with garlic sauce, pickles, tomatoes, and lettuce. Bursting with flavor and a satisfying choice for shawarma lovers."
+    },
+    {
+      "id": 2,
+      "pic": "./shawarma2.jpg",
+      "positionName": "Beef Shawarma",
+      "weight": 320,
+      "price": 400,
+      "constituents": [
+        "beef",
+        "pita bread",
+        "tahini sauce",
+        "onions",
+        "cucumber",
+        "cabbage"
+      ],
+      "calories": 500,
+      "info": "A hearty and savory option, the beef shawarma features succulent beef wrapped in soft pita bread and drizzled with tahini sauce. Topped with onions, cucumber, and cabbage, this shawarma is a flavorful delight for beef enthusiasts."
+    },
+    {
+      "id": 3,
+      "pic": "./shawarma3.jpg",
+      "positionName": "Vegetarian Shawarma",
+      "weight": 280,
+      "price": 300,
+      "constituents": [
+        "falafel",
+        "pita bread",
+        "hummus",
+        "pickled turnips",
+        "cucumbers",
+        "tabbouleh"
+      ],
+      "calories": 380,
+      "info": "A delightful meat-free option, the vegetarian shawarma features crispy falafel wrapped in fluffy pita bread and complemented with creamy hummus, pickled turnips, cucumbers, and tabbouleh. A delicious choice for vegetarians and falafel enthusiasts."
+    },
+    {
+      "id": 4,
+      "pic": "./shawarma4.jpg",
+      "positionName": "Spicy Shawarma",
+      "weight": 310,
+      "price": 380,
+      "constituents": [
+        "spicy chicken",
+        "pita bread",
+        "spicy sauce",
+        "jalapenos",
+        "red onions",
+        "lettuce"
+      ],
+      "calories": 480,
+      "info": "For those who crave heat, the spicy shawarma features zesty spicy chicken wrapped in warm pita bread and topped with fiery spicy sauce, jalapenos, red onions, and crisp lettuce. A tantalizing choice for spice lovers."
+    },
+    {
+      "id": 5,
+      "pic": "./shawarma5.png",
+      "positionName": "Mediterranean Shawarma",
+      "weight": 290,
+      "price": 320,
+      "constituents": [
+        "lamb",
+        "pita bread",
+        "tzatziki sauce",
+        "cucumbers",
+        "tomatoes",
+        "red onions"
+      ],
+      "calories": 420,
+      "info": "Bringing a taste of the Mediterranean, this shawarma features succulent lamb wrapped in soft pita bread and topped with cool tzatziki sauce, fresh cucumbers, tomatoes, and red onions. A flavorful choice for those who enjoy Mediterranean cuisine."
+    },
+    {
+      "id": 6,
+      "pic": "./shawarma6.jpg",
+      "positionName": "Seafood Shawarma",
+      "weight": 330,
+      "price": 420,
+      "constituents": [
+        "grilled fish",
+        "pita bread",
+        "tahini sauce",
+        "pickled vegetables",
+        "lettuce"
+      ],
+      "calories": 520,
+      "info": "A unique and delectable option, the seafood shawarma features grilled fish wrapped in warm pita bread and drizzled with creamy tahini sauce. Topped with tangy pickled vegetables and crisp lettuce, this shawarma is a seafood lover's delight."
+    }
+  ],
+  "pizzaMenu": [
+    {
+      "id": 1,
+      "pic": "./pizza1.jpg",
+      "positionName": "Margherita Pizza",
+      "weight": 300,
+      "price": 350,
+      "constituents": [
+        "tomato sauce",
+        "mozzarella cheese",
+        "fresh basil"
+      ],
+      "calories": 250,
+      "info": "A classic pizza topped with tomato sauce, mozzarella cheese, and fresh basil. Simple yet delicious, perfect for those who appreciate traditional flavors."
+    },
+    {
+      "id": 2,
+      "pic": "./pizza2.jpg",
+      "positionName": "Pepperoni Pizza",
+      "weight": 320,
+      "price": 400,
+      "constituents": [
+        "tomato sauce",
+        "mozzarella cheese",
+        "pepperoni slices"
+      ],
+      "calories": 300,
+      "info": "A timeless favorite, this pizza features a generous amount of pepperoni slices on top of tomato sauce and mozzarella cheese. A flavorful choice for pepperoni lovers."
+    },
+    {
+      "id": 3,
+      "pic": "./pizza3.jpg",
+      "positionName": "Vegetarian Pizza",
+      "weight": 310,
+      "price": 380,
+      "constituents": [
+        "tomato sauce",
+        "mozzarella cheese",
+        "bell peppers",
+        "mushrooms",
+        "onions",
+        "olives"
+      ],
+      "calories": 270,
+      "info": "Loaded with colorful and flavorful vegetables such as bell peppers, mushrooms, onions, and olives, this vegetarian pizza is a delightful option for those seeking a lighter yet satisfying meal."
+    },
+    {
+      "id": 4,
+      "pic": "./pizza4.jpg",
+      "positionName": "BBQ Chicken Pizza",
+      "weight": 330,
+      "price": 420,
+      "constituents": [
+        "barbecue sauce",
+        "mozzarella cheese",
+        "grilled chicken",
+        "red onions",
+        "cilantro"
+      ],
+      "calories": 320,
+      "info": "Featuring tangy barbecue sauce, tender grilled chicken, mozzarella cheese, red onions, and fresh cilantro, this pizza offers a delightful combination of sweet and savory flavors."
+    },
+    {
+      "id": 5,
+      "pic": "./pizza5.jpg",
+      "positionName": "Hawaiian Pizza",
+      "weight": 310,
+      "price": 390,
+      "constituents": [
+        "tomato sauce",
+        "mozzarella cheese",
+        "ham",
+        "pineapple"
+      ],
+      "calories": 290,
+      "info": "A tropical twist on the classic pizza, this Hawaiian pizza features the perfect blend of savory ham and sweet pineapple, creating a delightful flavor combination."
+    },
+    {
+      "id": 6,
+      "pic": "./pizza6.jpg",
+      "positionName": "Supreme Pizza",
+      "weight": 340,
+      "price": 430,
+      "constituents": [
+        "tomato sauce",
+        "mozzarella cheese",
+        "pepperoni",
+        "sausage",
+        "bell peppers",
+        "onions",
+        "olives"
+      ],
+      "calories": 330,
+      "info": "Packed with a variety of toppings including pepperoni, sausage, bell peppers, onions, and olives, this supreme pizza offers a flavorful and satisfying experience for those who enjoy a combination of different flavors."
+    }
+  ],
+  "wokMenu": [
+    {
+      "id": 1,
+      "pic": "./wok1.jpg",
+      "positionName": "Stir-Fried Chicken Wok",
+      "weight": 300,
+      "price": 350,
+      "constituents": [
+        "chicken",
+        "vegetables",
+        "soy sauce",
+        "garlic",
+        "ginger",
+        "rice noodles"
+      ],
+      "calories": 320,
+      "info": "A flavorful stir-fry dish featuring tender chicken, crisp vegetables, and rice noodles, all tossed in a savory soy sauce with garlic and ginger. A delicious and satisfying option for wok enthusiasts."
+    },
+    {
+      "id": 2,
+      "pic": "./wok2.jpg",
+      "positionName": "Beef and Broccoli Wok",
+      "weight": 280,
+      "price": 380,
+      "constituents": [
+        "beef",
+        "broccoli",
+        "oyster sauce",
+        "sesame oil",
+        "onion",
+        "rice"
+      ],
+      "calories": 350,
+      "info": "Tender beef strips and fresh broccoli florets stir-fried in a rich oyster sauce with sesame oil and onions, served with steamed rice. A classic combination that's sure to satisfy."
+    },
+    {
+      "id": 3,
+      "pic": "./wok3.jpg",
+      "positionName": "Vegetable Tofu Wok",
+      "weight": 250,
+      "price": 320,
+      "constituents": [
+        "tofu",
+        "mixed vegetables",
+        "soy sauce",
+        "sesame oil",
+        "garlic",
+        "brown rice"
+      ],
+      "calories": 280,
+      "info": "A healthy and flavorful wok dish featuring tofu and a colorful medley of mixed vegetables, all stir-fried in a light soy sauce with garlic and sesame oil, served with nutty brown rice."
+    },
+    {
+      "id": 4,
+      "pic": "./wok4.jpg",
+      "positionName": "Shrimp Fried Rice Wok",
+      "weight": 320,
+      "price": 400,
+      "constituents": [
+        "shrimp",
+        "rice",
+        "peas",
+        "carrots",
+        "egg",
+        "soy sauce"
+      ],
+      "calories": 300,
+      "info": "Juicy shrimp, fluffy rice, sweet peas, and carrots, all stir-fried together with egg and a touch of soy sauce. A satisfying and classic wok dish that's perfect for seafood lovers."
+    },
+    {
+      "id": 5,
+      "pic": "./wok5.jpg",
+      "positionName": "Spicy Pork Wok",
+      "weight": 290,
+      "price": 370,
+      "constituents": [
+        "pork",
+        "bell peppers",
+        "chili sauce",
+        "green onions",
+        "garlic",
+        "jasmine rice"
+      ],
+      "calories": 340,
+      "info": "Tender pork strips, vibrant bell peppers, and green onions stir-fried in a spicy chili sauce with garlic, served with fragrant jasmine rice. A bold and flavorful wok option for those who enjoy a kick of heat."
+    },
+    {
+      "id": 6,
+      "pic": "./wok6.jpg",
+      "positionName": "Mushroom Tofu Wok",
+      "weight": 270,
+      "price": 310,
+      "constituents": [
+        "tofu",
+        "mushrooms",
+        "soy sauce",
+        "ginger",
+        "scallions",
+        "quinoa"
+      ],
+      "calories": 290,
+      "info": "Savory tofu and earthy mushrooms stir-fried in a light soy sauce with fresh ginger and scallions, served with fluffy quinoa. A wholesome and satisfying wok dish that's perfect for vegetarians."
+    }
+  ],
+  "dessertsMenu": [
+    {
+      "id": 1,
+      "pic": "./dessert1.jpeg",
+      "positionName": "Chocolate Cake",
+      "weight": 150,
+      "price": 300,
+      "constituents": [
+        "chocolate cake",
+        "chocolate icing",
+        "whipped cream",
+        "chocolate shavings"
+      ],
+      "calories": 350,
+      "info": "Indulge in the rich and decadent flavors of our chocolate cake. Topped with creamy chocolate icing and a dollop of whipped cream, this dessert is a chocolate lover's dream."
+    },
+    {
+      "id": 2,
+      "pic": "./dessert2.jpg",
+      "positionName": "Cheesecake",
+      "weight": 180,
+      "price": 280,
+      "constituents": [
+        "graham cracker crust",
+        "cream cheese",
+        "sugar",
+        "vanilla extract",
+        "sour cream",
+        "eggs"
+      ],
+      "calories": 320,
+      "info": "Our classic cheesecake is a smooth and creamy delight. With a buttery graham cracker crust and a luscious cream cheese filling, it's the perfect way to satisfy your sweet tooth."
+    },
+    {
+      "id": 3,
+      "pic": "./dessert3.jpg",
+      "positionName": "Fruit Tart",
+      "weight": 120,
+      "price": 260,
+      "constituents": [
+        "pastry crust",
+        "vanilla custard",
+        "assorted fresh fruits",
+        "apricot glaze"
+      ],
+      "calories": 280,
+      "info": "Our fruit tart is a delightful combination of flaky pastry, creamy vanilla custard, and an assortment of fresh, colorful fruits. A light and refreshing dessert option."
+    },
+    {
+      "id": 4,
+      "pic": "./dessert4.jpg",
+      "positionName": "Tiramisu",
+      "weight": 160,
+      "price": 320,
+      "constituents": [
+        "ladyfingers",
+        "espresso",
+        "mascarpone cheese",
+        "cocoa powder"
+      ],
+      "calories": 300,
+      "info": "Savor the irresistible layers of espresso-soaked ladyfingers and velvety mascarpone cheese in our classic tiramisu. Finished with a dusting of cocoa powder, it's a true Italian delight."
+    },
+    {
+      "id": 5,
+      "pic": "./dessert5.jpg",
+      "positionName": "Lemon Tart",
+      "weight": 140,
+      "price": 270,
+      "constituents": [
+        "buttery tart crust",
+        "tangy lemon curd",
+        "powdered sugar"
+      ],
+      "calories": 250,
+      "info": "Experience the perfect balance of sweet and tangy with our lemon tart. The buttery crust holds a zesty lemon curd filling, finished with a sprinkle of powdered sugar for a delightful treat."
+    },
+    {
+      "id": 6,
+      "pic": "./dessert6.jpg",
+      "positionName": "Red Velvet Cake",
+      "weight": 170,
+      "price": 290,
+      "constituents": [
+        "red velvet cake",
+        "cream cheese frosting",
+        "chocolate shavings"
+      ],
+      "calories": 330,
+      "info": "Our red velvet cake is a timeless classic with its striking crimson hue and indulgent cream cheese frosting. Topped with delicate chocolate shavings, it's a luxurious dessert choice."
+    }
+  ],
+  "sauceMenu": [
+    {
+      "id": 1,
+      "pic": "./sauce1.jpg",
+      "positionName": "Tomato Ketchup",
+      "weight": 50,
+      "price": 50,
+      "constituents": ["tomatoes", "vinegar", "sugar", "salt", "spices"],
+      "calories": 20,
+      "info": "A classic condiment made from ripe tomatoes, vinegar, and a blend of spices, perfect for adding a tangy sweetness to your hot dog."}
+    ,
+    {
+      "id": 2,
+      "pic": "./sauce2.jpg",
+      "positionName": "Yellow Mustard",
+      "weight": 40,
+      "price": 40,
+      "constituents": ["mustard seeds", "vinegar", "water", "salt", "turmeric"],
+      "calories": 15,
+      "info": "A zesty and pungent mustard made from high-quality mustard seeds, vinegar, and a touch of turmeric, ideal for those who enjoy a bold flavor."}
+    ,
+    {
+      "id": 3,
+      "pic": "./sauce3.jpg",
+      "positionName": "Honey Mustard",
+      "weight": 45,
+      "price": 60,
+      "constituents": ["mustard seeds", "honey", "vinegar", "water", "salt"],
+      "calories": 30,
+      "info": "A delectable combination of sweet honey and tangy mustard seeds, creating a versatile and flavorful sauce that pairs perfectly with hot dogs."}
+    ,
+    {
+      "id": 4,
+      "pic": "./sauce4.jpg",
+      "positionName": "Barbecue Sauce",
+      "weight": 60,
+      "price": 70,
+      "constituents": ["tomato puree", "vinegar", "molasses", "spices", "smoke flavor"],
+      "calories": 35,
+      "info": "A rich and smoky sauce crafted from tomato puree, vinegar, and a blend of spices, adding a bold and savory taste to your hot dog."}
+    ,
+    {
+      "id": 5,
+      "pic": "./sauce5.jpg",
+      "positionName": "Sriracha Mayo",
+      "weight": 55,
+      "price": 65,
+      "constituents": ["mayonnaise", "Sriracha sauce", "garlic powder", "lemon juice"],
+      "calories": 40,
+      "info": "A creamy and spicy blend of mayonnaise and Sriracha sauce, offering a kick of heat and a hint of garlic to elevate the flavor of your hot dog."}
+    ,
+    {
+      "id": 6,
+      "pic": "./sauce6.jpg",
+      "positionName": "Pickle Relish",
+      "weight": 35,
+      "price": 55,
+      "constituents": ["pickles", "sugar", "vinegar", "onions", "salt"],
+      "calories": 25,
+      "info": "A delightful relish made from finely chopped pickles, onions, and a sweet-sour blend of sugar and vinegar, providing a crunchy and tangy topping for your hot dog."
+    }
+  ]
+}

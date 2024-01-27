@@ -11,7 +11,7 @@ import Shawarma from '../Pages/Shawarma/Shawarma'
 import Wok from '../Pages/Wok/Wok'
 import Shacks from '../Pages/Snacks/Snacks'
 
-import arrCards from '../data/burgers.json'
+import arrCards from '../data/fullMenuNCart.json'
 import CartPosition from '../Components/CartPosition/CartPosition'
 
 import MenuPopup from '../Components/MenuPopup/MenuPopup'
@@ -24,13 +24,21 @@ import Snacks from '../Pages/Snacks/Snacks'
 import delivery from "../../public/deliveryfree.png"
 
 function App() {
-  const [burgers, setBurgers] = useState(arrCards.forCart);
+  const [cartList, setCartList] = useState(arrCards.forCart);
   const [allProdCount, setAllProdCount] = useState(3);
   const [totalPrice, setTotalPrice] = useState(countStartPrice());
-  const [foodInfo, setFoodInfo] = useState(arrCards.BurgerMenu);
+  const [burgInfo, setBurgInfo] = useState(arrCards.BurgerMenu);
   const [popup, setPopup] = useState(popArr);
   const [num, setNum] = useState([1, 1, 1,]);
   const [pageName, setPageName] = useState(pageNameStatus());
+  const [snackInfo, setSnackInfo] = useState(arrCards.SnacksMenu);
+  const [hotDogInfo, setHotDogInfo] = useState(arrCards.HotDogsMenu)
+  const [comboInfo, setComboInfo] = useState(arrCards.ComboMenu)
+  const [shawarmaInfo, setShawarmaInfo] = useState(arrCards.shawarmaMenu)
+  const [pizzaInfo, setPpizzaInfo] = useState(arrCards.pizzaMenu)
+  const [wokInfo, setWokInfo] = useState(arrCards.wokMenu)
+  const [dessertInfo, setDessertInfo] = useState(arrCards.dessertsMenu)
+  const [sauceInfo, setSauceInfo] = useState(arrCards.sauceMenu)
 
   localStorage.pageName;
 
@@ -49,7 +57,7 @@ function App() {
 
   function countStartPrice() {
     let price = 0;
-    burgers.map((item) => {
+    cartList.map((item) => {
       price = price + item.price;
     })
     return price;
@@ -62,9 +70,9 @@ function App() {
 
   function delCard(id, amount = 0) {
 
-    const copyBurgerArr = [...burgers];
+    const copyBurgerArr = [...cartList];
     const newBurgerArr = copyBurgerArr.filter((item) => item.id !== id);
-    setBurgers(newBurgerArr);
+    setCartList(newBurgerArr);
 
     const arr = [...num];
     arr[-1 + id] = 1;
@@ -83,7 +91,7 @@ function App() {
 
   function editCount(amper, id, price, count = 1) {
 
-    const truePosition = burgers.find(i => i.id !== id);
+    const truePosition = cartList.find(i => i.id !== id);
     if (!truePosition) {
       setNum((prevState) => [...prevState, 1])
     }
@@ -105,9 +113,7 @@ function App() {
 
   function addFromMenu(item, number = 1) {
 
-
-
-    const truePosition = burgers.find(i => i.positionName === item.positionName);
+    const truePosition = cartList.find(i => i.positionName === item.positionName);
     if (truePosition) {
 
       editCount(+1, item.id, item.price, number)
@@ -115,18 +121,18 @@ function App() {
     }
 
     let lastId;
-    if (burgers.length !== 0) {
-      lastId = burgers[burgers.length - 1].id;
+    if (cartList.length !== 0) {
+      lastId = cartList[cartList.length - 1].id;
     } else {
       lastId = 0;
-      setNum([]);
+      //setNum([]);
     }
 
     editAllProdCount(1, number);
     editTotalPrice(1, item.price, number);
 
     item.id = lastId + 1;
-    setBurgers((prevState) => [...prevState, item]);
+    setCartList((prevState) => [...prevState, item]);
     setNum((prevState) => [...prevState, number])
 
   }
@@ -147,18 +153,20 @@ function App() {
         <Header
           localPage={localStorage.pageName}
           setPageName={setPageName}
+
         />
 
         <p className="page_name">{pageName}</p>
         <main>
           <div className="full_cart">
+
             <div className="cart_top">
               <p className="shop_cart">Shopping cart</p>
               <div>
                 <p className="all_prod_count">{allProdCount}</p></div>
             </div>
             <div className="cart">
-              {burgers.map((item) => (
+              {cartList.map((item) => (
                 <CartPosition {...item}
                   key={item.id}
                   editAllProdCount={editAllProdCount}
@@ -178,36 +186,114 @@ function App() {
               <p className="total_prc"> {totalPrice}₽</p>
 
             </div>
-<button className="order">Place an order</button>
-<div className="freeDelivery">
-  <img src={delivery} alt="" />
-  <p> Free delivery</p>
- 
-</div>
+            <button className="order">Place an order</button>
+            <div className="freeDelivery">
+              <img src={delivery} alt="" />
+              <p> Free delivery</p>
+
+            </div>
           </div>
           <Routes>
 
 
             <Route path="/" element={<Burgers
-              foodInfo={foodInfo}
+              burgInfo={burgInfo}
               addFromMenu={addFromMenu}
               popup={popup}
               setPopup={setPopup}
-              burgers={burgers}
-              setBurgers={setBurgers}
+              cartList={cartList}
+              setCartList={setCartList}
               openPopup={openPopup}
               closePopup={closePopup}
               editAllProdCount={editAllProdCount}
             />} />
-            <Route path="/HotDogs" element={<HotDogs />} />
-            <Route path="/Snacks" element={<Snacks />} />
+            <Route path="/HotDogs" element={<HotDogs
+              hotDogInfo={hotDogInfo}
+              addFromMenu={addFromMenu}
+              popup={popup}
+              setPopup={setPopup}
+              cartList={cartList}
+              setCartList={setCartList}
+              openPopup={openPopup}
+              closePopup={closePopup}
+              editAllProdCount={editAllProdCount} />} />
+            <Route path="/Snacks" element={<Snacks
+              snackInfo={snackInfo}
+              addFromMenu={addFromMenu}
+              popup={popup}
+              setPopup={setPopup}
+              cartList={cartList}
+              setCartList={setCartList}
+              openPopup={openPopup}
+              closePopup={closePopup}
+              editAllProdCount={editAllProdCount}
+            />} />
 
-            <Route path="/Combo" element={<Combo />} />
-            <Route path="/Desserts" element={<Desserts />} />
-            <Route path="/Pizza" element={<Pizza />} />
-            <Route path="/Sauces" element={<Sauces />} />
-            <Route path="/Shawarma" element={<Shawarma />} />
-            <Route path="/Wok" element={<Wok />} />
+            <Route path="/Combo" element={<Combo
+              comboInfo={comboInfo}
+              addFromMenu={addFromMenu}
+              popup={popup}
+              setPopup={setPopup}
+              cartList={cartList}
+              setCartList={setCartList}
+              openPopup={openPopup}
+              closePopup={closePopup}
+              editAllProdCount={editAllProdCount}
+            />} />
+            <Route path="/Desserts" element={<Desserts
+              dessertInfo={dessertInfo}
+              addFromMenu={addFromMenu}
+              popup={popup}
+              setPopup={setPopup}
+              cartList={cartList}
+              setCartList={setCartList}
+              openPopup={openPopup}
+              closePopup={closePopup}
+              editAllProdCount={editAllProdCount}
+            />} />
+            <Route path="/Pizza" element={<Pizza
+              pizzaInfo={pizzaInfo}
+              addFromMenu={addFromMenu}
+              popup={popup}
+              setPopup={setPopup}
+              cartList={cartList}
+              setCartList={setCartList}
+              openPopup={openPopup}
+              closePopup={closePopup}
+              editAllProdCount={editAllProdCount}
+            />} />
+            <Route path="/Sauces" element={<Sauces
+              sauceInfo={sauceInfo}
+              addFromMenu={addFromMenu}
+              popup={popup}
+              setPopup={setPopup}
+              cartList={cartList}
+              setCartList={setCartList}
+              openPopup={openPopup}
+              closePopup={closePopup}
+              editAllProdCount={editAllProdCount}
+            />} />
+            <Route path="/Shawarma" element={<Shawarma
+              shawarmaInfo={shawarmaInfo}
+              addFromMenu={addFromMenu}
+              popup={popup}
+              setPopup={setPopup}
+              cartList={cartList}
+              setCartList={setCartList}
+              openPopup={openPopup}
+              closePopup={closePopup}
+              editAllProdCount={editAllProdCount}
+            />} />
+            <Route path="/Wok" element={<Wok
+              wokInfo={wokInfo}
+              addFromMenu={addFromMenu}
+              popup={popup}
+              setPopup={setPopup}
+              cartList={cartList}
+              setCartList={setCartList}
+              openPopup={openPopup}
+              closePopup={closePopup}
+              editAllProdCount={editAllProdCount} />} />
           </Routes>
 
         </main>
