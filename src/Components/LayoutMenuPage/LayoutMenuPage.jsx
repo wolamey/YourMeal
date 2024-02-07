@@ -6,7 +6,7 @@ import "./LayoutMenuPage.scss"
 
 export default function LayoutMenuPage({cartList, setCartList, positionInfo,  openPopup, addFromMenu , closePopup, editTotalPrice, popup,  editAllProdCount }) {
   return (
-    <div>
+    <div className='layout_meal_menu'>
           <div key={uuidv4()} className='meal_page'>
 
 <div className="meal_menu">

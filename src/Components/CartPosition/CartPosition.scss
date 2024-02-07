@@ -45,8 +45,12 @@ button {
                 .weight {
                     color: #B1B1B1;
                 }
-            }
 
+            }
+                .cart_pos_right{
+                    display: flex;
+                    align-items: center;
+                }
             .volume {
                 display: flex;
                 align-items: center;
@@ -64,6 +68,8 @@ button {
             }
 
             .delEl {
+                padding:  0 0 0 10px  ;
+
                 img {
                     width: 15px;
                     cursor: pointer;

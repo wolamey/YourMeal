@@ -22,7 +22,7 @@ export default function CartPosition({pic, positionName, weight, price, delCard,
             <p className="weight">{weight}g</p>
             <p className="price">{price}₽</p>
           </div>
-
+<div className='cart_pos_right'>
           <div className="volume">
           <button onClick={()=>editCount(-1,id, price)} className='minus'>-</button>
             <p className="num">{num[-1+id]}</p>
@@ -31,7 +31,7 @@ export default function CartPosition({pic, positionName, weight, price, delCard,
 
           <div className="delEl" onClick={() => delCard(id, price)}>
             <img src={cross} alt="" />
-          </div>
+          </div></div>
           
 
 

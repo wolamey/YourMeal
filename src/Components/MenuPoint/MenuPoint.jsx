@@ -2,7 +2,7 @@ import './MenuPoint.scss'
 
 export default function Burgers({ pic, positionName, weight, price, openPopup, item, addFromMenu, delCard, id, editTotalPrice }) {
   return (
-    <div>
+    <div className="layout_menu_point" >
 
       <div onClick={() => {
         openPopup(item)

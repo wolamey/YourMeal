@@ -1,18 +1,24 @@
-.menu_position {
-    display: flex;
-    flex-direction: column;
-     width: 250px;
-    padding:12px;
-    margin: 10px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background: #FFFFFF;
-    border-radius: 12px;
+.layout_menu_point{
+    padding: 12px;
+    background-color: #fff;
+    border-radius: 18px;
+    .menu_position {
+    // display: flex;
+    // flex-direction: column;
+    //  width: 250px;
+    // padding:12px;
+    // margin: 10px;
+    // font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    // background: #FFFFFF;
+    // border-radius: 12px;
 
 img{
     width: 218px;
 height: 187px;
-object-fit: cover;
-border-radius: 12px;
+ object-fit: cover;
+ border-radius: 12px;
+
+width: 100%;
 
 }
     .position_container {
@@ -61,5 +67,7 @@ border-radius: 12px;
 
         }
     }
+}
+
 }
 

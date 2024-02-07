@@ -1,6 +1,6 @@
-@import "../../style/vars.scss" ;
+@import "../../style/vars.scss";
 
-button{
+button {
     border: none;
     outline: none;
     background: none;
@@ -8,93 +8,160 @@ button{
 
 }
 
-a{
+a {
     text-decoration: none;
 }
 
 
 
-.header_top_part{
-    background: url("../../../public/headerBack.jpg") ;
-     background-position: center;
-   display: flex;
-   flex-direction: column;
-background-repeat: no-repeat;
-
-     width: 100%;
-   .logo_part{
+.header_top_part {
+    background: url("../../../public/headerBack.jpg");
+    background-position: center;
     display: flex;
-    margin: auto;
-    width: 130px;
-    align-items: center;
-    justify-content: space-between;
-    padding: 24px 0;
+    flex-direction: column;
+    background-repeat: no-repeat;
 
-    
+    width: 100%;
 
-p{
-@include fontStyle (22px, #FFFFFF, normal, normal);
-}
-
-img{
-    width: 27px;
-}
-
-   }
-
-   .offer{
-    display: flex;
-    width: 784px;
-    height: 326px;
-    align-items: center;
-    margin: 0 auto 63px auto;
-    .whiteOffer{
-        @include fontStyle (50px, #FFFFFF, 800, 60px);
-
-    }
-    .orangeOffer{
-        @include fontStyle (50px, #FF5C00, 800, 60px);
-        
-    }
-    .freeDelivery{
-        @include fontStyle (16px, #FFFFFF, normal, 21.82px);
-        padding: 52px 0 0 0;
-        
-    }
-   }
-    
-}
-
-.bottom_tabs_part{
-    margin: 40px 0 50px 0;
-    nav{
+    .logo_part {
         display: flex;
-        width: 1200px;
-        justify-content: space-between;
         margin: auto;
+        width: 130px;
+        align-items: center;
+        justify-content: space-between;
+        padding: 24px 0;
 
-        a.active{
-            .menu_link{
+
+
+        p {
+            @include fontStyle (22px, #FFFFFF, normal, normal);
+        }
+
+        img {
+            width: 27px;
+        }
+
+    }
+
+    .offer {
+        display: flex;
+        width: 784px;
+        //  height: 326px;
+        align-items: center;
+        margin: 0 auto 68px auto;
+
+        .whiteOffer {
+            @include fontStyle (50px, #FFFFFF, 800, 60px);
+
+        }
+
+        .orangeOffer {
+            @include fontStyle (50px, #FF5C00, 800, 60px);
+
+        }
+
+        .freeDelivery {
+            @include fontStyle (16px, #FFFFFF, normal, 21.82px);
+            padding: 52px 0 0 0;
+
+        }
+    }
+
+}
+
+.bottom_tabs_part {
+    max-width: 1200px;
+    min-width: 300px;
+    margin: 40px auto 50px auto;
+
+    nav {
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 50px;
+
+        a {
+            margin: 10px 5px;
+        }
+
+        a.active {
+            .menu_link {
                 background: #FFAB08;
             }
         }
 
-    .menu_link{
-        width: 121px;
-        height: 40px;
-        border-radius: 50px;
-        gap: 8px;
-        background: #ffffff;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        @include fontStyle (16px, black, normal, 21.82px);
-        transition: 0.3s;
-        &:hover{
-            scale: 1.08;
+        .menu_link {
+            width: 121px;
+            height: 40px;
+            border-radius: 50px;
+            gap: 8px;
+            background: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            @include fontStyle (16px, black, normal, 21.82px);
+            transition: 0.3s;
+
+            &:hover {
+                scale: 1.08;
+            }
+
         }
-        
-    }
     }
 
+}
+
+@media (max-width: 800px) {
+    .header_top_part {
+        background-size: cover;
+
+        .offer {
+            width: 530px;
+            margin: 0 auto 25px auto;
+
+            img {
+                width: 280px;
+            }
+
+            .whiteOffer {
+                @include fontStyle (40px, #FFFFFF, 800, 50px);
+
+            }
+
+            .orangeOffer {
+                @include fontStyle (40px, #FF5C00, 800, 41px);
+
+            }
+
+            // .freeDelivery {
+            //     @include fontStyle (16px, #FFFFFF, normal, 21.82px);
+            //     padding: 52px 0 0 0;
+
+            // }
+        }
+    }
+}
+
+@media (max-width: 560px) {
+    .header_top_part {
+        .offer {
+width: 300px;
+            img {
+                width: 120px;
+            }
+            .whiteOffer {
+                @include fontStyle (23px, #FFFFFF, 600, 27px);
+
+            }
+            .orangeOffer {
+                @include fontStyle (25px, #FF5C00, 600, 22px);
+
+            }
+            .freeDelivery {
+                @include fontStyle (14px, #FFFFFF, normal, 21.82px);
+                 padding: 10px 0 0 0;
+    
+            }
+        }
+    }
 }
