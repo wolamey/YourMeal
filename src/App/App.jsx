@@ -1,5 +1,6 @@
 import { useState } from 'react'
-import { BrowserRouter as Router, Route, Routes, NavLink } from 'react-router-dom'
+  import { BrowserRouter as Router, Route, Routes, NavLink } from 'react-router-dom'
+
 
 import Burgers from '../Pages/Burgers/Burgers'
 import Combo from '../Pages/Combo/Combo'
@@ -13,8 +14,8 @@ import Shacks from '../Pages/Snacks/Snacks'
 
 import arrCards from '../data/fullMenuNCart.json'
 import CartPosition from '../Components/CartPosition/CartPosition'
+import LogIn from "../Pages/LogIn/LogIn"
 
-import MenuPopup from '../Components/MenuPopup/MenuPopup'
 
 const popArr = [];
 
@@ -22,6 +23,7 @@ import './App.scss'
 import Header from '../Components/Header/Header'
 import Snacks from '../Pages/Snacks/Snacks'
 import delivery from "../../public/deliveryfree.png"
+import SignIn from '../Pages/SignIn/SignIn'
 
 function App() {
   const [cartList, setCartList] = useState(arrCards.forCart);
@@ -40,7 +42,11 @@ function App() {
   const [dessertInfo, setDessertInfo] = useState(arrCards.dessertsMenu)
   const [sauceInfo, setSauceInfo] = useState(arrCards.sauceMenu)
 
+  const [loged, setLoged] = useState(false)
+
   localStorage.pageName;
+
+
 
   function pageNameStatus() {
     if (localStorage.pageName == '') {
@@ -201,11 +207,12 @@ function App() {
               addFromMenu={addFromMenu}
               popup={popup}
               setPopup={setPopup}
-              cartList={cartList}
-              setCartList={setCartList}
               openPopup={openPopup}
               closePopup={closePopup}
+              cartList={cartList}
+              setCartList={setCartList}
               editAllProdCount={editAllProdCount}
+              loged = {loged}
             />} />
             <Route path="/HotDogs" element={<HotDogs
               hotDogInfo={hotDogInfo}
@@ -216,6 +223,7 @@ function App() {
               setCartList={setCartList}
               openPopup={openPopup}
               closePopup={closePopup}
+              loged = {loged}
               editAllProdCount={editAllProdCount} />} />
             <Route path="/Snacks" element={<Snacks
               snackInfo={snackInfo}
@@ -226,6 +234,8 @@ function App() {
               setCartList={setCartList}
               openPopup={openPopup}
               closePopup={closePopup}
+              loged = {loged}
+
               editAllProdCount={editAllProdCount}
             />} />
 
@@ -238,6 +248,8 @@ function App() {
               setCartList={setCartList}
               openPopup={openPopup}
               closePopup={closePopup}
+              loged = {loged}
+
               editAllProdCount={editAllProdCount}
             />} />
             <Route path="/Desserts" element={<Desserts
@@ -249,6 +261,8 @@ function App() {
               setCartList={setCartList}
               openPopup={openPopup}
               closePopup={closePopup}
+              loged = {loged}
+
               editAllProdCount={editAllProdCount}
             />} />
             <Route path="/Pizza" element={<Pizza
@@ -260,6 +274,8 @@ function App() {
               setCartList={setCartList}
               openPopup={openPopup}
               closePopup={closePopup}
+              loged = {loged}
+
               editAllProdCount={editAllProdCount}
             />} />
             <Route path="/Sauces" element={<Sauces
@@ -270,6 +286,8 @@ function App() {
               cartList={cartList}
               setCartList={setCartList}
               openPopup={openPopup}
+              loged = {loged}
+
               closePopup={closePopup}
               editAllProdCount={editAllProdCount}
             />} />
@@ -282,6 +300,8 @@ function App() {
               setCartList={setCartList}
               openPopup={openPopup}
               closePopup={closePopup}
+              loged = {loged}
+
               editAllProdCount={editAllProdCount}
             />} />
             <Route path="/Wok" element={<Wok
@@ -292,8 +312,14 @@ function App() {
               cartList={cartList}
               setCartList={setCartList}
               openPopup={openPopup}
+              loged = {loged}
+
               closePopup={closePopup}
               editAllProdCount={editAllProdCount} />} />
+              <Route path='/login' element = {<LogIn
+              setLoged = {setLoged}
+              />}/>
+              <Route path='/SignIn' element = {<SignIn/>}/>
           </Routes>
 
         </main>

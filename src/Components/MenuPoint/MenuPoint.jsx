@@ -12,8 +12,8 @@ export default function Burgers({ pic, positionName, weight, price, openPopup, i
           <p className="price">{price}₽</p>
           <p className="name">{positionName}</p>
           <p className="weight">{weight}g</p>
-          <div onClick={(event)=>{event.stopPropagation()}}>
-          <button onClick={() => {addFromMenu(item,1)}}>Add to cart</button></div>
+          <div onClick={(event) => { event.stopPropagation() }}>
+            <button onClick={() => { addFromMenu(item, 1) }}>Add to cart</button></div>
         </div>
       </div>
 

@@ -17,8 +17,7 @@ export default function Header({setPageName, localPage}) {
 
 function setPage(pageName){
     setPageName(pageName);
-//     localPage = pageName;
-// console.log(localPage);
+
 localStorage.pageName = pageName
 }
 

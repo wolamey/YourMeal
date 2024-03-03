@@ -4,7 +4,7 @@ import React from 'react';
 import './MenuPopup.scss'
 import crossImg from '../../assets/cross.png'
 
-export default function MenuPopup({ item, pic, positionName, calories, weight, price, id, info, constituents, closePopup, burgers, setBurgers, editAllProdCount, editTotalPrice, addFromPopup, addFromMenu }) {
+export default function MenuPopup({ item, pic, positionName, calories, weight, price, id, info, constituents, closePopup, addFromMenu }) {
     const [number, setNumber] = useState(1)
     function changeNum(amper) {
         if (String(amper) === '-1' && number === 1) {
